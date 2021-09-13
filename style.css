@@ -1,0 +1,286 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	height: 100vh;
+	background: rgba(255, 255, 255, .9);
+	font-family: LEMON MILK;
+	cursor: none;
+    overflow: hidden;
+}
+body a{
+	text-decoration: none;
+	color: #000;
+}
+h1,.Limg,.rimgsec,.Rimg,.hamburger,.Hnav,.Himg{
+    overflow: hidden;
+}
+header{
+	width: 100%;
+	/* height: 10vh; */
+	display: flex;
+	justify-content: space-between;
+}
+h2{
+	font-size: 105px;
+	-webkit-text-stroke: 2px  #000;
+	color: #fff;
+	font-family: Begika;
+}
+nav {
+	padding: 18px 20px;
+}
+.dotMenu {
+	width: 100px;
+	background: #000;
+	clip-path: circle(70% at 97% 0);
+	cursor: pointer;
+}
+.dotSec {
+	text-align: right;
+	transform: translateY(-3px);
+	margin-right: 4px;
+	height: 15px;
+}
+.dot {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background: #fff;
+	border-radius: 50%;
+}
+
+/* container */
+.container {
+    /* height: 90vh; */
+    width: 100%;
+	display: grid;
+	grid-template-columns: 40% 60%;
+}
+h1 {
+    font-size: 58px;
+    font-weight: 400;
+    transform: translate(-105px, 0px);
+    padding: 20px 0px;
+
+}
+h1 span {
+    display: inline-block;
+    font-size: 78px;
+    font-weight: 600;
+    -webkit-text-stroke: 2px #000;
+    color: transparent;
+    font-family: ARISTOTLE;
+    position: relative;
+}
+h1 span .spanlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+/* left part */
+
+.left {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.left h2{
+	position: absolute;
+	top: 50%;
+}
+.Limg {
+    width: 350px;
+    border-top-left-radius: 43%;
+    border-top-right-radius: 43%;
+    position: relative;
+}
+.Limg .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 9999;
+}
+.Limg .overlay2{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+
+}
+.Limg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* right part */
+.right{
+	display: flex;
+	flex-direction: column;
+    position: relative;
+}
+.right h2{
+	position: absolute;
+	bottom: 10%;
+	right: 12%;
+    z-index: 9;
+}
+p {
+    font-size: 15px;
+    width: 60%;
+    font-weight: 300;
+    margin: auto;
+}
+.rimgsec {
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 76px;
+}
+
+.Rimg{
+   width: 448px;
+    position: relative;
+
+}
+.Rimg .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 9;
+
+}
+.Rimg .overlay2{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9;
+
+}
+.Rimg img{
+   width: 100%;
+}
+/* cursor  */
+
+#cursor,#cursor2 {
+  position: fixed;
+  display: block;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000;
+  margin-right: 14px;
+  z-index: 9999;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  transition-property: background, transform, -webkit-transform;
+}
+#cursor2{
+    width: 10px;
+    height:10px;
+    background: #000;
+    transition: all 0.2s ease;
+}
+.text__grow {
+  width: 70px !important;
+  height: 70px !important;
+  border: 2px solid #fff;
+  background: transparent;
+  z-index: 9999;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+/* hamburger menubar */
+.hamburger{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    clip-path: circle(0% at 100% 0);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transition: .3s;
+    padding: 10px 20px;
+}
+.Hheader{
+    width: 100px;
+    height: 100px;
+}
+.Hheader img{
+    width: 30px;
+    height: 30px;
+}
+/* hamburger wrapper */
+.Hwrapper {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    height: 100%;
+}
+.Himg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.Himg img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.Hnav{
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+.Hnav ul li a{
+    color: white;
+    display: block;
+    font-family: 'Bigilla';
+    font-size: 70px;
+    position: relative;
+    transition: .5s;
+}
+.Hnav ul li a::before{
+   content: '';
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   width: 0%;
+   height: 5px;
+   background: #fff;
+    transition: .5s;
+
+}
+.Hnav ul li a:hover::before{
+    width: 100%;
+}
